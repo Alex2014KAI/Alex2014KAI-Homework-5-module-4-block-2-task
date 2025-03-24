@@ -1,11 +1,11 @@
 ﻿#include <iostream>
 
-#define WORK
+// #define WORK
 void print_dynamic_array(int* arr, int logical_size, int actual_size);
 int* append_to_dynamic_array(int* arr, int& logical_size, int& actual_size, int newData);
 
-// #define QUESTION
-void debugAppend_to_dynamic_array(int* arr, int& logical_size, int& actual_size, int newData);
+#define QUESTION
+void debugAppend_to_dynamic_array(int*& arr, int& logical_size, int& actual_size, int newData);
 
 int main()
 {
@@ -110,7 +110,7 @@ int* append_to_dynamic_array(int* arr, int& logical_size, int& actual_size, int 
 };
 
 
-void debugAppend_to_dynamic_array(int* arr, int& logical_size, int& actual_size, int newData) {
+void debugAppend_to_dynamic_array(int*& arr, int& logical_size, int& actual_size, int newData) {
     logical_size++;
 
     if (logical_size < actual_size) {
